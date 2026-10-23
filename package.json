@@ -1,0 +1,18 @@
+{
+  "name": "taskflow-mvp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local-first collaborative project management MVP using React, Express, and SQLite",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "start": "npm --prefix server start",
+    "db:seed": "npm --prefix server run seed",
+    "test": "npm --prefix server test",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
